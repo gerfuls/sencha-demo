@@ -59,6 +59,15 @@ Ext.define("Bongo.view.Main", {
             		title: 'Deals'
             	}
             },
+            {
+            	title: 'Calendar',
+            	iconCls: '',
+            	
+            	items: {
+            		docked: 'top',
+            		xtype: 'titlebar',
+            		title: 'Calendar'
+            	}
             }
         ]
     }
