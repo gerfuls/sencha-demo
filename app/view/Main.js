@@ -15,9 +15,20 @@ Ext.define("Bongo.view.Main", {
             	items: {
             		docked: 'top',
             		xtype: 'titlebar',
-            		title: 'People'
+            		title: 'People',
+            		items: [
+            			{
+							align: 'left',
+							iconCls: 'settings',
+            				iconMask: true
+            			},
+            			{
+							align: 'right',
+							iconCls: 'search',
+            				iconMask: true
+            			}
+            		]
             	}
-            	
             },
             {
             	title: 'Places',
@@ -40,7 +51,6 @@ Ext.define("Bongo.view.Main", {
             			}
             		]
             	}
-            	
             },
             {
                 title: 'Bongo',
