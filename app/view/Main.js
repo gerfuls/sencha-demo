@@ -10,7 +10,7 @@ Ext.define("Bongo.view.Main", {
         items: [
             {
             	title: 'People',
-            	iconCls: '',
+            	iconCls: 'user',
             	
             	items: {
             		docked: 'top',
@@ -21,7 +21,7 @@ Ext.define("Bongo.view.Main", {
             },
             {
             	title: 'Places',
-            	iconCls: '',
+            	iconCls: 'maps',
             	
             	items: {
             		docked: 'top',
@@ -51,7 +51,7 @@ Ext.define("Bongo.view.Main", {
             },
             {
             	title: 'Deals',
-            	iconCls: '',
+            	iconCls: 'star',
             	
             	items: {
             		docked: 'top',
@@ -61,7 +61,7 @@ Ext.define("Bongo.view.Main", {
             },
             {
             	title: 'Calendar',
-            	iconCls: '',
+            	iconCls: 'time',
             	
             	items: {
             		docked: 'top',
