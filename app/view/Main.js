@@ -2,7 +2,8 @@ Ext.define("Bongo.view.Main", {
     extend: 'Ext.tab.Panel',
     requires: [
         'Ext.TitleBar',
-        'Ext.Video'
+        'Ext.Video',
+        'Bongo.view.PeopleTabs'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -12,23 +13,28 @@ Ext.define("Bongo.view.Main", {
             	title: 'People',
             	iconCls: 'user',
             	
-            	items: {
-            		docked: 'top',
-            		xtype: 'titlebar',
-            		title: 'People',
-            		items: [
-            			{
-							align: 'left',
-							iconCls: 'settings',
-            				iconMask: true
-            			},
-            			{
-							align: 'right',
-							iconCls: 'search',
-            				iconMask: true
-            			}
-            		]
-            	}
+            	items: [
+            		{
+						docked: 'top',
+						xtype: 'titlebar',
+						title: 'People',
+						items: [
+							{
+								align: 'left',
+								iconCls: 'settings',
+								iconMask: true
+							},
+							{
+								align: 'right',
+								iconCls: 'search',
+								iconMask: true
+							}
+						],
+					},
+					{
+						xtype: 'peopletabs'
+					}
+				]
             },
             {
             	title: 'Places',
