@@ -28,6 +28,8 @@ Ext.application({
     launch: function() {
         // Destroy the #appLoadingIndicator element
         Ext.fly('appLoadingIndicator').destroy();
+        
+        //Ext.Viewport.add({xtype:'peoplelist'});
 
         // Initialize the main view
         Ext.Viewport.add(Ext.create('Bongo.view.Main'));
