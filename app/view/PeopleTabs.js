@@ -1,6 +1,7 @@
 Ext.define('Bongo.view.PeopleTabs', {
 	extend: 'Ext.tab.Panel',
 	xtype: 'peopletabs',
+	requires: ['Bongo.view.PeopleList'],
 	
 	config: {
 		ui: 'light',

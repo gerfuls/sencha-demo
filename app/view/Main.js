@@ -3,7 +3,8 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.PeopleTabs'
+        'Bongo.view.PeopleTabs',
+        'Bongo.view.PeopleList'
     ],
     config: {
         tabBarPosition: 'bottom',

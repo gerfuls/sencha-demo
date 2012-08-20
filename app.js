@@ -5,7 +5,9 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main'],
+    views: ['Main', 'PeopleList', 'PeopleTabs'],
+    stores: ['People'],
+    models: ['Person'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
