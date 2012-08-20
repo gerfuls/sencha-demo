@@ -9,7 +9,18 @@ Ext.define("Bongo.view.Main", {
 
         items: [
             {
-                title: 'Welcome',
+            	title: 'People',
+            	iconCls: '',
+            	
+            	items: {
+            		docked: 'top',
+            		xtype: 'titlebar',
+            		title: 'People'
+            	}
+            	
+            },
+            {
+                title: 'Bongo',
                 iconCls: 'home',
 
                 styleHtmlContent: true,
