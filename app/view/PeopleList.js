@@ -3,9 +3,15 @@ Ext.define('Bongo.view.PeopleList', {
 	xtype: 'peoplelist',
 	requires: ['Bongo.store.People'],
 	
+	plugins: [
+        {
+            xclass: 'Ext.plugin.PullRefresh',
+            pullRefreshText: 'Pull to Refresh'
+        }
+    ],
+	
 	config: {
 		itemTpl: '{name}',
-		store: 'People',
-		fullscreen: true
+		store: 'People'
 	}
 });

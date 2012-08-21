@@ -3,73 +3,34 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.PeopleTabs',
-        'Bongo.view.PeopleList',
-        'Bongo.view.PlacesTabs',
         'Bongo.view.DealsTabs',
-        'Bongo.view.CalendarTabs'
+        'Bongo.view.CalendarTabs',
+        'Bongo.view.PeopleNav',
+        'Bongo.view.PlacesNav'
     ],
+    
     config: {
-        tabBarPosition: 'bottom',
+        tabBar: {
+        	layout: {
+        		pack: 'center',
+        		align: 'center',
+        	},
+        	docked: 'bottom'
+        },
+        defaults: {
+        	scrollable: false
+        },
 
         items: [
             {
             	title: 'People',
             	iconCls: 'team',
-            	
-            	items: [
-            		{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'People',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								iconCls: 'search',
-								iconMask: true
-							}
-						],
-					},
-					{
-						xtype: 'peopletabs'
-					}
-				]
+            	xtype: 'peoplenav'
             },
             {
             	title: 'Places',
             	iconCls: 'maps',
-            	
-            	items: [
-					// {
-// 						docked: 'top',
-// 						xtype: 'titlebar',
-// 						title: 'Places',
-// 						items: [
-// 							{
-// 								align: 'left',
-// 								iconCls: 'settings',
-// 								iconMask: true
-// 							},
-// 							{
-// 								align: 'right',
-// 								iconCls: 'search',
-// 								iconMask: true
-// 							}
-// 						]
-// 					},
-// 					{
-// 						xtype: 'placestabs'
-// 					},
-					{
-						xtype: 'map',
-    					useCurrentLocation: true
-    				}
-				]
+            	xtype: 'placesnav'
             },
             {
                 title: 'Bongo',
