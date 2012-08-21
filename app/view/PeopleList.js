@@ -1,17 +1,19 @@
 Ext.define('Bongo.view.PeopleList', {
 	extend: 'Ext.List',
 	xtype: 'peoplelist',
-	requires: ['Bongo.store.People'],
-	
-	plugins: [
-        {
-            xclass: 'Ext.plugin.PullRefresh',
-            pullRefreshText: 'Pull to Refresh'
-        }
-    ],
+	requires: [
+		'Bongo.store.People',
+		'Ext.plugin.PullRefresh'
+	],
 	
 	config: {
 		itemTpl: '{name}',
-		store: 'People'
+		store: 'People',
+		plugins: [
+			{
+				xclass: 'Ext.plugin.PullRefresh',
+				pullRefreshText: 'Pull to Refresh'
+			}
+		]
 	}
 });
