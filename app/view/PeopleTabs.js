@@ -4,6 +4,8 @@ Ext.define('Bongo.view.PeopleTabs', {
 	requires: ['Bongo.view.PeopleList'],
 	
 	config: {
+		title: 'People',
+		
 		ui: 'dark',
 		tabBar: {
 			layout: {
@@ -17,7 +19,7 @@ Ext.define('Bongo.view.PeopleTabs', {
 		items: [
 			{
 				title: 'Updates',
-				cls: 'card'
+				xtype: 'peoplelist'
 			},
 			{
 				title: 'My Friends',

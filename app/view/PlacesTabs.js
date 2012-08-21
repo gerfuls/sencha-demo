@@ -3,6 +3,8 @@ Ext.define('Bongo.view.PlacesTabs', {
 	xtype: 'placestabs',
 	
 	config: {
+		title: 'Places',
+		
 		ui: 'dark',
 		tabBar: {
 			layout: {
