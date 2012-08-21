@@ -10,7 +10,16 @@ Ext.define("Bongo.view.Main", {
     ],
     
     config: {
-        tabBarPosition: 'bottom',
+        tabBar: {
+        	layout: {
+        		pack: 'center',
+        		align: 'center',
+        	},
+        	docked: 'bottom'
+        },
+        defaults: {
+        	scrollable: false
+        },
 
         items: [
             {
