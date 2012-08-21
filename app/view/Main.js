@@ -3,12 +3,12 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.PeopleTabs',
-        'Bongo.view.PeopleList',
-        'Bongo.view.PlacesTabs',
         'Bongo.view.DealsTabs',
-        'Bongo.view.CalendarTabs'
+        'Bongo.view.CalendarTabs',
+        'Bongo.view.PeopleNav',
+        'Bongo.view.PlacesNav'
     ],
+    
     config: {
         tabBarPosition: 'bottom',
 
