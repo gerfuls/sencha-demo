@@ -1,7 +1,6 @@
-Ext.define('Bongo.view.PeopleTabs', {
+Ext.define('Bongo.view.CalendarTabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'peopletabs',
-	requires: ['Bongo.view.PeopleList'],
+	xtype: 'calendartabs',
 	
 	config: {
 		ui: 'dark',
@@ -16,15 +15,15 @@ Ext.define('Bongo.view.PeopleTabs', {
 		},
 		items: [
 			{
-				title: 'Updates',
+				title: 'Month',
 				cls: 'card'
 			},
 			{
-				title: 'My Friends',
+				title: 'Day',
 				cls: 'card'
 			},
 			{
-				title: 'Clubs',
+				title: 'Trending',
 				cls: 'card'
 			}
 		]

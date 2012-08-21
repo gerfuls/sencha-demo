@@ -4,7 +4,10 @@ Ext.define("Bongo.view.Main", {
         'Ext.TitleBar',
         'Ext.Video',
         'Bongo.view.PeopleTabs',
-        'Bongo.view.PeopleList'
+        'Bongo.view.PeopleList',
+        'Bongo.view.PlacesTabs',
+        'Bongo.view.DealsTabs',
+        'Bongo.view.CalendarTabs'
     ],
     config: {
         tabBarPosition: 'bottom',
@@ -41,23 +44,32 @@ Ext.define("Bongo.view.Main", {
             	title: 'Places',
             	iconCls: 'maps',
             	
-            	items: {
-            		docked: 'top',
-            		xtype: 'titlebar',
-            		title: 'Places',
-            		items: [
-            			{
-							align: 'left',
-							iconCls: 'settings',
-            				iconMask: true
-            			},
-            			{
-							align: 'right',
-							iconCls: 'search',
-            				iconMask: true
-            			}
-            		]
-            	}
+            	items: [
+					// {
+// 						docked: 'top',
+// 						xtype: 'titlebar',
+// 						title: 'Places',
+// 						items: [
+// 							{
+// 								align: 'left',
+// 								iconCls: 'settings',
+// 								iconMask: true
+// 							},
+// 							{
+// 								align: 'right',
+// 								iconCls: 'search',
+// 								iconMask: true
+// 							}
+// 						]
+// 					},
+// 					{
+// 						xtype: 'placestabs'
+// 					},
+					{
+						xtype: 'map',
+    					useCurrentLocation: true
+    				}
+				]
             },
             {
                 title: 'Bongo',
@@ -69,7 +81,7 @@ Ext.define("Bongo.view.Main", {
                 items: {
                     docked: 'top',
                     xtype: 'titlebar',
-                    title: 'Bongo'
+                    title: 'Bongo',
                 },
 
                 html: [
@@ -80,21 +92,54 @@ Ext.define("Bongo.view.Main", {
             	title: 'Deals',
             	iconCls: 'star',
             	
-            	items: {
-            		docked: 'top',
-            		xtype: 'titlebar',
-            		title: 'Deals'
-            	}
+            	items: [
+            		{
+						docked: 'top',
+						xtype: 'titlebar',
+						title: 'Deals',
+						items: [
+							{
+								align: 'left',
+								iconCls: 'settings',
+								iconMask: true
+							},
+							{
+								align: 'right',
+								iconCls: 'search',
+								iconMask: true
+							}
+						]
+            		},
+            		{
+            			xtype: 'dealstabs'
+            		}
+            	]
             },
             {
             	title: 'Calendar',
             	iconCls: 'time',
             	
-            	items: {
-            		docked: 'top',
-            		xtype: 'titlebar',
-            		title: 'Calendar'
-            	}
+            	items: [
+					{
+						docked: 'top',
+						xtype: 'titlebar',
+						title: 'Calendar',
+						items: [
+							{
+								align: 'left',
+								iconCls: 'settings',
+								iconMask: true
+							},
+							{
+								align: 'right',
+								text: 'Filter'
+							}
+						]
+					},
+					{
+						xtype: 'calendartabs'
+					}
+				]
             }
         ]
     }

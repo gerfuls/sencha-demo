@@ -1,7 +1,6 @@
-Ext.define('Bongo.view.PeopleTabs', {
+Ext.define('Bongo.view.DealsTabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'peopletabs',
-	requires: ['Bongo.view.PeopleList'],
+	xtype: 'dealstabs',
 	
 	config: {
 		ui: 'dark',
@@ -16,15 +15,15 @@ Ext.define('Bongo.view.PeopleTabs', {
 		},
 		items: [
 			{
-				title: 'Updates',
+				title: 'Favorites',
 				cls: 'card'
 			},
 			{
-				title: 'My Friends',
+				title: 'Nearby',
 				cls: 'card'
 			},
 			{
-				title: 'Clubs',
+				title: 'Suggested',
 				cls: 'card'
 			}
 		]
