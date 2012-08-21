@@ -30,33 +30,7 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'Places',
             	iconCls: 'maps',
-            	
-            	items: [
-					// {
-// 						docked: 'top',
-// 						xtype: 'titlebar',
-// 						title: 'Places',
-// 						items: [
-// 							{
-// 								align: 'left',
-// 								iconCls: 'settings',
-// 								iconMask: true
-// 							},
-// 							{
-// 								align: 'right',
-// 								iconCls: 'search',
-// 								iconMask: true
-// 							}
-// 						]
-// 					},
-// 					{
-// 						xtype: 'placestabs'
-// 					},
-					{
-						xtype: 'map',
-    					useCurrentLocation: true
-    				}
-				]
+            	xtype: 'placesnav'
             },
             {
                 title: 'Bongo',
