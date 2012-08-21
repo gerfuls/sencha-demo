@@ -25,29 +25,7 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'People',
             	iconCls: 'team',
-            	
-            	items: [
-            		{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'People',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								iconCls: 'search',
-								iconMask: true
-							}
-						],
-					},
-					{
-						xtype: 'peopletabs'
-					}
-				]
+            	xtype: 'peoplenav'
             },
             {
             	title: 'Places',
