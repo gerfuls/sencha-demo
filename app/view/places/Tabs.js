@@ -1,4 +1,4 @@
-Ext.define('Bongo.view.PlacesTabs', {
+Ext.define('Bongo.view.places.Tabs', {
 	extend: 'Ext.tab.Panel',
 	xtype: 'placestabs',
 	

@@ -1,4 +1,4 @@
-Ext.define('Bongo.view.PeopleList', {
+Ext.define('Bongo.view.people.List', {
 	extend: 'Ext.List',
 	xtype: 'peoplelist',
 	requires: [
@@ -14,6 +14,11 @@ Ext.define('Bongo.view.PeopleList', {
 				xclass: 'Ext.plugin.PullRefresh',
 				pullRefreshText: 'Pull to Refresh'
 			}
-		]
+		],
+		listeners: {
+			itemtap: function() {
+				
+			}
+		}
 	}
 });

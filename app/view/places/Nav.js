@@ -1,9 +1,9 @@
-Ext.define('Bongo.view.PlacesNav', {
+Ext.define('Bongo.view.places.Nav', {
 	extend: 'Ext.navigation.View',
 	xtype: 'placesnav',
 	
 	requires: [
-		'Bongo.view.PlacesTabs'
+		'Bongo.view.places.Tabs'
 	],
 	
 	config: {

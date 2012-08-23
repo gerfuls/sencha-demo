@@ -1,4 +1,4 @@
-Ext.define('Bongo.view.BongoTest', {
+Ext.define('Bongo.view.bongo.Test', {
 	extend: 'Ext.Container',
 	xtype: 'bongotest',
 	

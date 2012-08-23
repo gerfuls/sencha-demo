@@ -3,11 +3,11 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.DealsTabs',
-        'Bongo.view.CalendarTabs',
-        'Bongo.view.PeopleNav',
-        'Bongo.view.PlacesNav',
-        'Bongo.view.BongoNav'
+        'Bongo.view.deals.Tabs',
+        'Bongo.view.calendar.Tabs',
+        'Bongo.view.people.Nav',
+        'Bongo.view.places.Nav',
+        'Bongo.view.bongo.Nav'
     ],
     
     config: {

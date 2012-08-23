@@ -1,9 +1,9 @@
-Ext.define('Bongo.view.BongoNav', {
+Ext.define('Bongo.view.bongo.Nav', {
 	extend: 'Ext.navigation.View',
 	xtype: 'bongonav',
 	
 	requires: [
-		'Bongo.view.BongoTest'
+		'Bongo.view.bongo.Test'
 	],
 	
 	config: {
