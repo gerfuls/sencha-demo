@@ -5,7 +5,7 @@ Ext.application({
         'Ext.MessageBox'
     ],
 
-    views: ['Main', 'PeopleList', 'PeopleTabs'],
+    views: ['Main'],
     stores: ['People'],
     models: ['Person'],
 
