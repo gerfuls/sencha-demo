@@ -8,6 +8,7 @@ Ext.application({
     views: ['Main'],
     stores: ['People', 'Updates'],
     models: ['Person', 'Update'],
+    controllers: ['Main'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
