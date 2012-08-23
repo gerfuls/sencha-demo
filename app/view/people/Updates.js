@@ -1,14 +1,15 @@
-Ext.define('Bongo.view.people.List', {
+Ext.define('Bongo.view.people.Updates', {
 	extend: 'Ext.List',
-	xtype: 'peoplelist',
+	xtype: 'people-updates',
+	
 	requires: [
-		'Bongo.store.People',
+		'Bongo.store.Updates',
 		'Ext.plugin.PullRefresh'
 	],
 	
 	config: {
 		itemTpl: '{name}',
-		store: 'People',
+		store: 'Updates',
 		plugins: [
 			{
 				xclass: 'Ext.plugin.PullRefresh',

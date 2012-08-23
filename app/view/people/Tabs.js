@@ -1,7 +1,7 @@
 Ext.define('Bongo.view.people.Tabs', {
 	extend: 'Ext.tab.Panel',
 	xtype: 'peopletabs',
-	requires: ['Bongo.view.people.List'],
+	requires: ['Bongo.view.people.Updates'],
 	
 	config: {
 		title: 'People',
@@ -19,7 +19,7 @@ Ext.define('Bongo.view.people.Tabs', {
 		items: [
 			{
 				title: 'Updates',
-				xtype: 'peoplelist'
+				xtype: 'people-updates'
 			},
 			{
 				title: 'My Friends',

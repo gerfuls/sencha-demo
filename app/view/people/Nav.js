@@ -3,8 +3,7 @@ Ext.define('Bongo.view.people.Nav', {
 	xtype: 'peoplenav',
 	
 	requires: [
-		'Bongo.view.people.Tabs',
-		'Bongo.view.people.List'
+		'Bongo.view.people.Tabs'
 	],
 	
 	config: {
