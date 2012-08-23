@@ -1,5 +1,5 @@
 Ext.define('Bongo.view.BongoTest', {
-	extend: 'Ext.navigation.View',
+	extend: 'Ext.Container',
 	xtype: 'bongotest',
 	
 	config: {

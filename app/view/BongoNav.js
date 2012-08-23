@@ -32,7 +32,14 @@ Ext.define('Bongo.view.BongoNav', {
 			{
 				xtype: 'button',
 				align: 'center',
-				text: 'New View'
+				text: 'New View',
+				listeners: {
+					tap: function() {
+						var nav = this.getParent().push({
+							xtype: 'bongotest'
+						});
+					}
+				}
 			}
 		]
 	}
