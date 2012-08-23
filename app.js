@@ -6,8 +6,8 @@ Ext.application({
     ],
 
     views: ['Main'],
-    stores: ['People'],
-    models: ['Person'],
+    stores: ['People', 'Updates'],
+    models: ['Person', 'Update'],
 
     icon: {
         '57': 'resources/icons/Icon.png',
