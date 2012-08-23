@@ -1,6 +1,6 @@
-Ext.define('Bongo.view.CalendarTabs', {
+Ext.define('Bongo.view.deals.Tabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'calendartabs',
+	xtype: 'dealstabs',
 	
 	config: {
 		ui: 'dark',
@@ -15,15 +15,15 @@ Ext.define('Bongo.view.CalendarTabs', {
 		},
 		items: [
 			{
-				title: 'Month',
+				title: 'Favorites',
 				cls: 'card'
 			},
 			{
-				title: 'Day',
+				title: 'Nearby',
 				cls: 'card'
 			},
 			{
-				title: 'Trending',
+				title: 'Suggested',
 				cls: 'card'
 			}
 		]

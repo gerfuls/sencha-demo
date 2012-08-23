@@ -1,10 +1,9 @@
-Ext.define('Bongo.view.PeopleNav', {
+Ext.define('Bongo.view.people.Nav', {
 	extend: 'Ext.navigation.View',
 	xtype: 'peoplenav',
 	
 	requires: [
-		'Bongo.view.PeopleTabs',
-		'Bongo.view.PeopleList'
+		'Bongo.view.people.Tabs'
 	],
 	
 	config: {

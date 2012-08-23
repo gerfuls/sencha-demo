@@ -3,10 +3,11 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.DealsTabs',
-        'Bongo.view.CalendarTabs',
-        'Bongo.view.PeopleNav',
-        'Bongo.view.PlacesNav'
+        'Bongo.view.deals.Tabs',
+        'Bongo.view.calendar.Tabs',
+        'Bongo.view.people.Nav',
+        'Bongo.view.places.Nav',
+        'Bongo.view.bongo.Nav'
     ],
     
     config: {
@@ -35,19 +36,7 @@ Ext.define("Bongo.view.Main", {
             {
                 title: 'Bongo',
                 iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Bongo',
-                },
-
-                html: [
-                    "<center>Welcome to Bongo</center>"
-                ].join("")
+				xtype: 'bongonav'
             },
             {
             	title: 'Deals',
