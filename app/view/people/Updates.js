@@ -25,13 +25,6 @@ Ext.define('Bongo.view.people.Updates', {
 				xclass: 'Ext.plugin.PullRefresh',
 				pullRefreshText: 'Pull to Refresh'
 			}
-		],
-		listeners: {
-			itemtap: function() {
-				this.getParent().getParent().push({
-					xtype: 'people-update-show'
-				});
-			}
-		}
+		]
 	}
 });
