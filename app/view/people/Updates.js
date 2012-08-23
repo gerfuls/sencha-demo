@@ -4,11 +4,21 @@ Ext.define('Bongo.view.people.Updates', {
 	
 	requires: [
 		'Bongo.store.Updates',
-		'Ext.plugin.PullRefresh'
+		'Ext.plugin.PullRefresh',
+		'Bongo.view.people.updates.Show'
 	],
 	
 	config: {
-		itemTpl: '{name}',
+		id: 'people-updates',
+		itemTpl: '<b>{name}</b>' +
+				 '<tpl switch="type">' +
+					'<tpl case="checkin">' +
+					 	' checked in at <b>{place}</b>' +
+					'<tpl case="share-offer">' +
+						' shared offer: <b>{offer}</b>' +
+				 	'<tpl default>' +
+				 		' did something.' +
+				 '</tpl>',
 		store: 'Updates',
 		plugins: [
 			{
@@ -18,7 +28,9 @@ Ext.define('Bongo.view.people.Updates', {
 		],
 		listeners: {
 			itemtap: function() {
-				
+				this.getParent().getParent().push({
+					xtype: 'people-update-show'
+				});
 			}
 		}
 	}
