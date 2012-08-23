@@ -6,7 +6,8 @@ Ext.define("Bongo.view.Main", {
         'Bongo.view.DealsTabs',
         'Bongo.view.CalendarTabs',
         'Bongo.view.PeopleNav',
-        'Bongo.view.PlacesNav'
+        'Bongo.view.PlacesNav',
+        'Bongo.view.BongoNav'
     ],
     
     config: {
@@ -35,19 +36,7 @@ Ext.define("Bongo.view.Main", {
             {
                 title: 'Bongo',
                 iconCls: 'home',
-
-                styleHtmlContent: true,
-                scrollable: true,
-
-                items: {
-                    docked: 'top',
-                    xtype: 'titlebar',
-                    title: 'Bongo',
-                },
-
-                html: [
-                    "<center>Welcome to Bongo</center>"
-                ].join("")
+				xtype: 'bongonav'
             },
             {
             	title: 'Deals',
