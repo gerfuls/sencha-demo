@@ -1,9 +1,10 @@
-Ext.define('Bongo.view.bongo.Test', {
+Ext.define('Bongo.view.bongo.SecondPanel', {
 	extend: 'Ext.Container',
-	xtype: 'bongotest',
+	xtype: 'bongo-second-panel',
 	
 	config: {
 		autoDestroy: false,
+		title: 'Panel 2',
 		
 		items: [
 			{

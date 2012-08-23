@@ -3,7 +3,7 @@ Ext.define('Bongo.view.bongo.Nav', {
 	xtype: 'bongonav',
 	
 	requires: [
-		'Bongo.view.bongo.Test'
+		'Bongo.view.bongo.FirstPanel'
 	],
 	
 	config: {
@@ -30,16 +30,7 @@ Ext.define('Bongo.view.bongo.Nav', {
 		
 		items: [
 			{
-				xtype: 'button',
-				align: 'center',
-				text: 'New View',
-				listeners: {
-					tap: function() {
-						var nav = this.getParent().push({
-							xtype: 'bongotest'
-						});
-					}
-				}
+				xtype: 'bongo-first-panel'
 			}
 		]
 	}
