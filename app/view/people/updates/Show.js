@@ -10,10 +10,17 @@ Ext.define('Bongo.view.people.updates.Show', {
             {
                 id: 'content',
                 tpl: [
-                    '<div class="top">',
-                        '<div class="name">{name} <span>{type}</span></div>',
-                    '</div>'
-                ].join('')
+            		 '<br><center>',
+            		 '<b>{name}</b>',
+					 '<tpl switch="type">',
+						'<tpl case="checkin">',
+							' checked in at <b>{place}</b>',
+						'<tpl case="share-offer">',
+							' shared offer: <b>{offer}</b>',
+						'<tpl default>',
+							' did something.',
+					 '</tpl></center>'
+				].join('')
             }
         ],
 
