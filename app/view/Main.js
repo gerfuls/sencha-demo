@@ -1,8 +1,6 @@
 Ext.define("Bongo.view.Main", {
     extend: 'Ext.tab.Panel',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video',
         'Bongo.view.deals.Nav',
         'Bongo.view.calendar.Nav',
         'Bongo.view.people.Nav',
