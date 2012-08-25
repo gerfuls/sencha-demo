@@ -1,6 +1,6 @@
 Ext.define('Bongo.view.people.Nav', {
 	extend: 'Ext.navigation.View',
-	xtype: 'peoplenav',
+	xtype: 'people-nav',
 	
 	requires: [
 		'Bongo.view.people.Tabs'
@@ -31,7 +31,7 @@ Ext.define('Bongo.view.people.Nav', {
 		
 		items: [
 			{
-				xtype: 'peopletabs'
+				xtype: 'people-tabs'
 			}
 		]
 	}

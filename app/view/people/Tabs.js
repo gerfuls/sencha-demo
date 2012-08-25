@@ -1,6 +1,6 @@
 Ext.define('Bongo.view.people.Tabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'peopletabs',
+	xtype: 'people-tabs',
 	requires: ['Bongo.view.people.Updates'],
 	
 	config: {

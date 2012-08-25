@@ -25,7 +25,7 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'People',
             	iconCls: 'team',
-            	xtype: 'peoplenav'
+            	xtype: 'people-nav'
             },
             {
             	title: 'Places',
