@@ -5,8 +5,7 @@ Ext.define('Bongo.view.people.Tabs', {
 	
 	config: {
 		title: 'People',
-		
-		ui: 'dark',
+		ui: 'light',
 		tabBar: {
 			layout: {
 				pack: 'center'

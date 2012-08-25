@@ -16,7 +16,8 @@ Ext.define("Bongo.view.Main", {
         		pack: 'center',
         		align: 'center',
         	},
-        	docked: 'bottom'
+        	docked: 'bottom',
+			ui: 'light'
         },
         defaults: {
         	scrollable: false
