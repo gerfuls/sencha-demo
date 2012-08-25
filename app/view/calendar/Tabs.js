@@ -1,9 +1,10 @@
 Ext.define('Bongo.view.calendar.Tabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'calendartabs',
+	xtype: 'calendar-tabs',
 	
 	config: {
-		ui: 'dark',
+		title: 'Calendar',
+		ui: 'light',
 		tabBar: {
 			layout: {
 				pack: 'center'

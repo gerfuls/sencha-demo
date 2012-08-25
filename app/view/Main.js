@@ -4,7 +4,7 @@ Ext.define("Bongo.view.Main", {
         'Ext.TitleBar',
         'Ext.Video',
         'Bongo.view.deals.Nav',
-        'Bongo.view.calendar.Tabs',
+        'Bongo.view.calendar.Nav',
         'Bongo.view.people.Nav',
         'Bongo.view.places.Nav',
         'Bongo.view.bongo.Nav'
@@ -47,28 +47,7 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'Calendar',
             	iconCls: 'time',
-            	
-            	items: [
-					{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'Calendar',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								text: 'Filter'
-							}
-						]
-					},
-					{
-						xtype: 'calendartabs'
-					}
-				]
+            	xtype: 'calendar-nav'
             }
         ]
     }
