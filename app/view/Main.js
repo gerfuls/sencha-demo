@@ -35,7 +35,7 @@ Ext.define("Bongo.view.Main", {
             {
                 title: 'Bongo',
                 iconCls: 'home',
-				xtype: 'bongonav'
+				xtype: 'bongo-nav'
             },
             {
             	title: 'Deals',

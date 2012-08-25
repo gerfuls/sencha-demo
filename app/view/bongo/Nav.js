@@ -1,6 +1,6 @@
 Ext.define('Bongo.view.bongo.Nav', {
 	extend: 'Ext.navigation.View',
-	xtype: 'bongonav',
+	xtype: 'bongo-nav',
 	
 	requires: [
 		'Bongo.view.bongo.FirstPanel'
