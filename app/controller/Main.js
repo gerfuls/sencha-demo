@@ -3,7 +3,7 @@ Ext.define('Bongo.controller.Main', {
 
     config: {
     	refs: {
-            peopleNav: 'peoplenav',
+            peopleNav: 'people-nav',
             peopleUpdates: 'people-updates',
             showUpdate: 'people-updates-show'
         },
