@@ -10,6 +10,7 @@ Ext.define('Bongo.view.places.Nav', {
 		autoDestroy: false,
 		
 		navigationBar: {
+			ui: 'light',
 			items: [
 				{
 					xtype: 'button',

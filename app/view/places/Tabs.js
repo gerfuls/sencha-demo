@@ -5,7 +5,7 @@ Ext.define('Bongo.view.places.Tabs', {
 	config: {
 		title: 'Places',
 		
-		ui: 'dark',
+		ui: 'light',
 		tabBar: {
 			layout: {
 				pack: 'center'
