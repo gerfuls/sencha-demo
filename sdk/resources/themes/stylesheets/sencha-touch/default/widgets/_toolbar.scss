@@ -126,11 +126,14 @@ $include-toolbar-uis: $include-default-uis !default;
   $toolbar-button-color: darken($color, 5%);
 
   .x-toolbar-#{$ui-label} {
-    @include background-gradient($color, $gradient);
+	@include background-gradient($list-active-color, $list-active-gradient);
+	@include color-by-background($list-active-color);
+	@include bevel-by-background($list-active-color);
+    
     border-color: $toolbar-border-color;
 
     .x-title {
-      @include color-by-background($color);
+      color:white;
       @include bevel-by-background($color);
     }
 
