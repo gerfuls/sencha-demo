@@ -1,15 +1,16 @@
-Ext.define('Bongo.view.bongo.Nav', {
+Ext.define('Bongo.view.calendar.Nav', {
 	extend: 'Ext.navigation.View',
-	xtype: 'bongo-nav',
+	xtype: 'calendar-nav',
 	
 	requires: [
-		'Bongo.view.bongo.FirstPanel'
+		'Bongo.view.calendar.Tabs'
 	],
 	
 	config: {
 		autoDestroy: false,
 		
 		navigationBar: {
+			ui: 'light',
 			items: [
 				{
 					xtype: 'button',
@@ -30,7 +31,7 @@ Ext.define('Bongo.view.bongo.Nav', {
 		
 		items: [
 			{
-				xtype: 'bongo-first-panel'
+				xtype: 'calendar-tabs'
 			}
 		]
 	}

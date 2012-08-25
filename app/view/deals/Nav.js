@@ -1,15 +1,16 @@
-Ext.define('Bongo.view.bongo.Nav', {
+Ext.define('Bongo.view.deals.Nav', {
 	extend: 'Ext.navigation.View',
-	xtype: 'bongo-nav',
+	xtype: 'deals-nav',
 	
 	requires: [
-		'Bongo.view.bongo.FirstPanel'
+		'Bongo.view.deals.Tabs'
 	],
 	
 	config: {
 		autoDestroy: false,
 		
 		navigationBar: {
+			ui: 'light',
 			items: [
 				{
 					xtype: 'button',
@@ -30,7 +31,7 @@ Ext.define('Bongo.view.bongo.Nav', {
 		
 		items: [
 			{
-				xtype: 'bongo-first-panel'
+				xtype: 'deals-tabs'
 			}
 		]
 	}

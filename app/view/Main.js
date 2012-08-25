@@ -1,10 +1,8 @@
 Ext.define("Bongo.view.Main", {
     extend: 'Ext.tab.Panel',
     requires: [
-        'Ext.TitleBar',
-        'Ext.Video',
-        'Bongo.view.deals.Tabs',
-        'Bongo.view.calendar.Tabs',
+        'Bongo.view.deals.Nav',
+        'Bongo.view.calendar.Nav',
         'Bongo.view.people.Nav',
         'Bongo.view.places.Nav',
         'Bongo.view.bongo.Nav'
@@ -27,70 +25,27 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'People',
             	iconCls: 'team',
-            	xtype: 'peoplenav'
+            	xtype: 'people-nav'
             },
             {
             	title: 'Places',
             	iconCls: 'maps',
-            	xtype: 'placesnav'
+            	xtype: 'places-nav'
             },
             {
                 title: 'Bongo',
                 iconCls: 'home',
-				xtype: 'bongonav'
+				xtype: 'bongo-nav'
             },
             {
             	title: 'Deals',
             	iconCls: 'star',
-            	
-            	items: [
-            		{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'Deals',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								iconCls: 'search',
-								iconMask: true
-							}
-						]
-            		},
-            		{
-            			xtype: 'dealstabs'
-            		}
-            	]
+            	xtype: 'deals-nav'
             },
             {
             	title: 'Calendar',
             	iconCls: 'time',
-            	
-            	items: [
-					{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'Calendar',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								text: 'Filter'
-							}
-						]
-					},
-					{
-						xtype: 'calendartabs'
-					}
-				]
+            	xtype: 'calendar-nav'
             }
         ]
     }

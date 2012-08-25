@@ -1,9 +1,11 @@
 Ext.define('Bongo.view.deals.Tabs', {
 	extend: 'Ext.tab.Panel',
-	xtype: 'dealstabs',
+	xtype: 'deals-tabs',
 	
 	config: {
-		ui: 'dark',
+		title: 'Deals',
+		
+		ui: 'light',
 		tabBar: {
 			layout: {
 				pack: 'center'
