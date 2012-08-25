@@ -1,6 +1,6 @@
 Ext.define('Bongo.view.places.Nav', {
 	extend: 'Ext.navigation.View',
-	xtype: 'placesnav',
+	xtype: 'places-nav',
 	
 	requires: [
 		'Bongo.view.places.Tabs'
@@ -31,7 +31,7 @@ Ext.define('Bongo.view.places.Nav', {
 		
 		items: [
 			{
-				xtype: 'placestabs'
+				xtype: 'places-tabs'
 			}
 		]
 	}
