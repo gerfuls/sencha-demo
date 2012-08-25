@@ -3,7 +3,7 @@ Ext.define("Bongo.view.Main", {
     requires: [
         'Ext.TitleBar',
         'Ext.Video',
-        'Bongo.view.deals.Tabs',
+        'Bongo.view.deals.Nav',
         'Bongo.view.calendar.Tabs',
         'Bongo.view.people.Nav',
         'Bongo.view.places.Nav',
@@ -42,29 +42,7 @@ Ext.define("Bongo.view.Main", {
             {
             	title: 'Deals',
             	iconCls: 'star',
-            	
-            	items: [
-            		{
-						docked: 'top',
-						xtype: 'titlebar',
-						title: 'Deals',
-						items: [
-							{
-								align: 'left',
-								iconCls: 'settings',
-								iconMask: true
-							},
-							{
-								align: 'right',
-								iconCls: 'search',
-								iconMask: true
-							}
-						]
-            		},
-            		{
-            			xtype: 'dealstabs'
-            		}
-            	]
+            	xtype: 'deals-nav'
             },
             {
             	title: 'Calendar',
