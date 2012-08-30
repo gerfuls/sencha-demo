@@ -10,15 +10,23 @@ Ext.define('Bongo.view.people.Updates', {
 	
 	config: {
 		id: 'people-updates',
-		itemTpl: '<b>{name}</b>' +
-				 '<tpl switch="type">' +
-					'<tpl case="checkin">' +
-					 	' checked in at <b>{place}</b>' +
-					'<tpl case="share-offer">' +
-						' shared offer: <b>{offer}</b>' +
-				 	'<tpl default>' +
-				 		' did something.' +
-				 '</tpl>',
+		itemTpl: [
+			'<tpl switch="type">',
+				'<tpl case="checkin">',
+					'<i class="icon-map-marker"></i>',
+				'<tpl case="share-offer">',
+					'<i class="icon-tag"></i>',
+			'</tpl>',
+			' <b>{name}</b>',
+			'<tpl switch="type">',
+				'<tpl case="checkin">',
+			 		' checked in at <b>{place}</b>',
+				'<tpl case="share-offer">',
+					' shared offer: <b>{offer}</b>',
+				'<tpl default>',
+				 	' did something.',
+			'</tpl>'
+		],
 		store: 'Updates',
 		plugins: [
 			{

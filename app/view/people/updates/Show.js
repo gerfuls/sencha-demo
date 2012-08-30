@@ -2,7 +2,7 @@ Ext.define('Bongo.view.people.updates.Show', {
 	extend: 'Ext.Container',
 	xtype: 'people-update-show',
 	
-	    config: {
+	config: {
         title: 'Update',
         layout: 'vbox',
 
