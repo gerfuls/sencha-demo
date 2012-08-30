@@ -59,7 +59,11 @@
         {
             "path": "resources/css/app.css",
             "update": "delta"
-        }
+        },
+		{
+			"path": "resources/css/font-awesome.css",
+			"update": "delta"
+		}
     ],
 
     /**
