@@ -24,27 +24,27 @@ Ext.define("Bongo.view.Main", {
         items: [
             {
             	title: 'People',
-            	iconCls: 'team',
+            	iconCls: 'team1',
             	xtype: 'people-nav'
             },
             {
             	title: 'Places',
-            	iconCls: 'maps',
+            	iconCls: 'compass2',
             	xtype: 'places-nav'
             },
             {
                 title: 'Bongo',
-                iconCls: 'home',
+                iconCls: 'locate4',
 				xtype: 'bongo-nav'
             },
             {
             	title: 'Deals',
-            	iconCls: 'star',
+            	iconCls: 'tags',
             	xtype: 'deals-nav'
             },
             {
             	title: 'Calendar',
-            	iconCls: 'time',
+            	iconCls: 'calendar',
             	xtype: 'calendar-nav'
             }
         ]

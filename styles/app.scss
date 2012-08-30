@@ -20,6 +20,13 @@ $active-color: #c82128;
 @include sencha-msgbox;
 @include sencha-list-pullrefresh;
 
+// include optional pictos
+@include pictos-iconmask(locate4);
+@include pictos-iconmask(team1);
+@include pictos-iconmask(compass2);
+@include pictos-iconmask(tags);
+@include pictos-iconmask(calendar);
+
 html, body {
 	height: 100%;
 	background-color: #fff;
